@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khoa's information</title>
+</head>
+<body>  
+     <!--This is a contact form -->
+    <div class="navigation_bar">
+        <header>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./static_website_p2.html">Projects</a>
+                <a href="./static_website_p3.html">Contact</a>
+                <a href="./static_website_p4.html">About me</a>
+            </nav>
+        </header>
+    </div>
+    <form action="data.js" method="get" enctype="multipart/form-data" class="form">
+        <div class="email">
+            <label for="email">Email : </label>
+            <input type="email" name="email" id="email" required placeholder="Enter your email">
+        </div>
+        <div class="name">
+            <label for="Name" >Your Name : </label>
+            <input type="text" name="Name" id="Name"  placeholder="Enter your name" required>
+        </div>
+        <div class="phone">
+            <label for="phone">Phone Number : </label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+            required >
+        </div>
+        <div class="choice">
+            <label for="choice">For work : </label>
+            <input type="radio" name="choice" id="work" value="work"  >
+            <label for="choice">For more information : </label>   
+            <input type="radio" name="choice" id="moreinfo" value="moreinfo">
+        </div>
+        <div class="message-subject">
+            <label for="message-subject">Message Subject : </label>
+            <input type="text" name="message-subject" id="message-subject" placeholder="Enter the subject">
+        </div>
+        <div class="mess-lable">
+            <label id="mess-lable" for="message">Message : </label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <div class="file">
+            <label for="file">File : </label>
+            <input type="file" name="file" id="file">
+
+        </div>
+        <button type="submit"> Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <footer>
+        <a href="#top">Back to top of page</a>
+        <p><strong>This website is created by Khoa, I commit that this is my own work</strong></p>
+    </footer>
+</body>
+</html>
